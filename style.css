@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  color: whitesmoke;
+  background-image: linear-gradient(to bottom right, black, rgb(120, 120, 120));
+}
+
+.calculadora {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 5px rgb(44, 44, 44);
+}
+
+.secao-visor {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgb(35, 35, 35);
+  color: rgb(235, 235, 235);
+  height: 33.333%;
+  width: 100%;
+  font-size: 350%;
+  text-align: right;
+  padding-right: 25px;
+}
+
+.secao-visor:focus {
+  outline: none;
+}
+
+.secao-botoes {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  background-color: rgb(15, 15, 15);
+  height: 66.667%;
+}
+
+.botao {
+  font-size: 200%;
+  cursor: pointer;
+}
+
+.secao-botoes-numericos {
+  width: 66.666%;
+  border-right: 1px solid rgb(50, 50, 50);
+}
+
+.secao-botoes-operadores {
+  font-size: 55%;
+  color: lawngreen;
+  width: 33.334%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linha {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.linha:last-of-type {
+  flex-direction: row;
+}
+
+.numero {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  transition: 0.15s all;
+}
+.numero:hover {
+  background-color: rgb(40, 40, 40);
+}
+.numero:active {
+  background-color: rgb(126, 228, 25);
+  color: rgb(50, 50, 50);
+}
+
+.zero {
+  border-bottom-left-radius: 20px;
+}
+
+.operadores {
+  height: 16.667%;
+  width: 100%;
+  line-height: 61.111px;
+  font-weight: 700;
+  text-align: center;
+  border-left: 1px solid transparent;
+  transition: 0.15s all;
+}
+.operadores:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+.operadores:hover {
+  background-color: rgb(30, 30, 30);
+  border-left: 1px solid lawngreen;
+}
+.operadores:active {
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
+}
