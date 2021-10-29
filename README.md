@@ -24,4 +24,4 @@ Recriação de uma calculadora simples com layout moderno e minimalista. Para co
 
 ## ACESSO:
 
-Você pode acessá-la em: https://calculadora--minimalista.netlify.app/
+Você pode acessá-la em: https://calculadora-minimalista.netlify.app/
